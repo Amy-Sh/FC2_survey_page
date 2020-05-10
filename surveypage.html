@@ -2,56 +2,62 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Free CodeCamp survey</title>
+    <title>Customer Satisfaction Survey</title>
     <link rel="stylesheet" href="surveypage.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <h1>free code camp survey form</h1>
-            <p>How are you staying at home?</p>
+            <h1 id="title">Customer Satisfaction Survey</h1>
+            <p id="description">Thank you for shopping with us! We would love to get feedback on your recent purchase.</p>
         </header>
         <form id="survey-form">
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="emal" id="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+                <input type="number" id="number" min="10" max="120" placeholder="Age">
             </div>
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <p>Which of the following words would you use to describe our product?</p>
+                <select name="productdescription" id="dropdown" required>
+                    <option disabled selected value>Select your feeling</option>
+                    <option value="great">Great</option>
+                    <option value="fine">Fine</option>
+                    <option value="buggy">Buggy</option>
+                    <option value="noanswer">Prefer not to answer</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <p>Would you recommend our product to a friend?</p>
+                <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+                <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+                <label><input name="user-recommend" value="no" type="radio" class="input-radio">No</label>
             </div>
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <p>Which features do you want to when you buy a toy?<span class="clue">(Check all that apply)</span></p>
+                <label><input name="prefer" value="imagination" type="checkbox" class="input-checkbox">Spark the child's imagination</label>
+                <label><input name="prefer" value="variety" type="checkbox" class="input-checkbox">Can be used in various ways</label>
+                <label><input name="prefer" value="reality" type="checkbox" class="input-checkbox">Reality -look like the real thing</label>
+                <label><input name="prefer" value="simplisity" type="checkbox" class="input-checkbox">Simple design and do not have a lot of features</label>
+                <label><input name="prefer" value="challenging" type="checkbox" class="input-checkbox">A bit challenging for kids</label>
+                <label><input name="prefer" value="compact" type="checkbox" class="input-checkbox">Easy to be fold and become compact when kids don't use</label>
+                <label><input name="prefer" value="durability" type="checkbox" class="input-checkbox">Durability</label>
+                <label><input name="prefer" value="price" type="checkbox" class="input-checkbox">price</label>
             </div>
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <p>If you could change about our product, what would it be?</p>
+                <textarea id="comments" class="textarea" name="comment" placeholder="Enter your comment here"></textarea>
             </div>
             <div class="form-group">
-                <label for=""></label>
-                <input type="text">
-            </div>
-            <div class="form-group">
-                <label for=""></label>
-                <input type="text">
-            </div>
-            <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
         </form>
     </div>
