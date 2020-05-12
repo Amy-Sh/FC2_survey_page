@@ -1,6 +1,5 @@
 :root {
     --color-white: #f3f3f3;
-    --color-darkblue: #1b1b32;
     --color-darkblue-alpha: rgba(27, 27, 50, 0.687);
     --color-green: #37af65;
 }
@@ -16,7 +15,6 @@ body {
     font-size: 1rem;
     font-weight: 400;
     color: var(--color-white);
-    margin: 0;
 }
 
 body::before {
@@ -60,7 +58,9 @@ button {
 }
 
 .container {
-    width: 100%;
+    width: 720px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #description {
@@ -69,4 +69,5 @@ button {
 
 form {
     background: var(--color-darkblue-alpha);
+    border-radius: 5px;
 }
