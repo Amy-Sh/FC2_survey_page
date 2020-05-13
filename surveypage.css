@@ -140,7 +140,7 @@ select {
     border: var(--color-white);
     color: var(--color--darkblue);
     font-size: 1.5rem;
-    width: 200px;
+    width: 100%;
     margin-top: 15px;
     padding: 6px 20px;
     transition: all 0.5s;
